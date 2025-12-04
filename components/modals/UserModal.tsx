@@ -44,7 +44,7 @@ export const UserModal: React.FC<UserModalProps> = ({ isVisible, onClose, onSave
         >
             <View style={styles.centeredView}>
                 <View style={styles.modalView}>
-                    <Text style={styles.modalTitle}>Novo Cliente</Text>
+                    <Text style={styles.modalTitle}>Novo Usuário</Text>
 
                     <TextInput style={styles.input} placeholder="Nome" value={name} onChangeText={setName} />
                     <TextInput style={styles.input} placeholder="Email" value={email} onChangeText={setEmail} keyboardType="email-address" />

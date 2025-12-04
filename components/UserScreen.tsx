@@ -62,16 +62,16 @@ export default function UserScreen() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.header}>Clientes</Text>
+            <Text style={styles.header}>Usuários</Text>
 
             <Button
-                title="Novo Cliente"
+                title="Novo Usuário"
                 onPress={() => setIsModalVisible(true)} 
                 color="#4CAF50" 
             />
 
             {users.length === 0 ? (
-                <Text style={styles.emptyText}>Nenhum cliente cadastrado.</Text>
+                <Text style={styles.emptyText}>Nenhum usuário cadastrado.</Text>
             ) : (
                 <FlatList
                     data={users}
